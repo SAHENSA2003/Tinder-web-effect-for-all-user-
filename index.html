@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Tinder Effect?Fun</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .detailedContainer {
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+        }
+
+        ;
+
+        .user_form {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .mainFrom::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .mainFrom::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .mainFrom::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        .mainFrom::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainApp w-full h-screen bg-black text-white font-sans">
+        <div class="imagecontainer w-full h-screen relative overflow-hidden">
+            <div
+                class=" mainCard z-[3] first h-[120%] w-[120%] bg-orange-600 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                <img class="w-full h-full object-cover" src="" alt="first Image">
+            </div>
+            <div
+                class=" incomingCard z-[2] second h-[120%] w-[120%] bg-green-400 absolute  top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 z-[4] w-full h-screen   flex flex-col justify-between ">
+            <div class="navbar flex justify-around items-center  py-6">
+                <div class="pflImage w-[3rem] h-[3rem] rounded-full overflow-hidden  bg-red-600">
+                    <img class="ProfilePic cursor-pointer w-full h-full object-cover" src="" alt="profile">
+                </div>
+                <h3 class="text-xl capitalize tracking-tight font-medium ">They must like you </h3>
+                <div
+                    class="chatIcon w-[3rem] h-[3rem] rounded-full bg-blue-400 relative opacity-50 flex items-center justify-center">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                        <path
+                            d="M10 3H14C18.4183 3 22 6.58172 22 11C22 15.4183 18.4183 19 14 19V22.5C9 20.5 2 17.5 2 11C2 6.58172 5.58172 3 10 3Z">
+                        </path>
+                    </svg>
+                    <div
+                        class="badge text-sm top-0 right-0 absolute h-4 w-4 bg-red-600 font-semibold text-center rounded-full">
+                        5</div>
+                </div>
+                <div class="login Currnetid bg-contain bg-center bg-no-repeat">
+                    <button class="login p-2 rounded-xl hover:text-xl cursor-pointer  ">Login</button>
+                </div>
+            </div>
+            <div class="detailedContainer w-full bottom-0">
+                <div class="detailed flex gap-4  flex-col w-full ">
+                    <div class="element part1  flex gap-4">
+                        <div class=" bg-white h-8 w-8 bg-red-400 rounded-full flex justify-center items-center">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                                <path
+                                    d="M10.0001 19.0001L19 19.0002L19 17.0002L12.0001 17.0001L12 6.8283L15.9497 10.778L17.364 9.36381L11 2.99985L4.63603 9.36381L6.05025 10.778L10 6.82825L10.0001 19.0001Z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <h3 class="text-gray-600"></h3>
+                    </div>
+                    <div class="element part2 flex gap-4 font-semibold">
+                        <h1 class="text-6xl"></h1>
+                        <h1 class="text-6xl opacity-60"></h1>
+                    </div>
+                    <div class="element tags flex gap-4">
+
+                    </div>
+                    <div class="element bio text-white/90 mt-5">
+                        <h2 class=" text-2xl font-medium">Bio</h2>
+                        <p class="font-medium text-lg mt-2"></p>
+                    </div>
+                    <div class="element flex gap-4 mt-10 mb-4">
+                        <button
+                            class="deny py-2 bg-gray-300 cursor-pointer w-1/3 flex justify-center items-center rounded-xl">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                                <path
+                                    d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button
+                            class="love cursor-pointer py-2 bg-red-400 w-1/3 flex justify-center items-center rounded-xl">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C5.51545 2.99926 8.09315 2.56029 10.2605 3.44044L6.34315 7.35843L7.75736 8.77264L12 4.53L11.9872 4.51617C11.9918 4.52028 11.9964 4.5244 12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- profile -->
+    <div
+        class="profileSection flex flex-col items-center justify-around gap-2  hidden bg-gray-600 h-[100vh] w-[100vw] ">
+        <h1 title="Name" class='NameofProfile text-center text-2xl  '></h1>
+        <img class="Prop rounded-xl h-[80vh] w-[90vw] sm:h-[80vh] sm:w-[90vw] md:h-[70vh] md:w-[60vw] lg:h-[60vh] lg:w-[30vw] overflow-hidden "
+            src="" alt="No Profile Picture">
+        <button title="Back"
+            class="Home p-4 cursor-pointer bg-green-400 rounded-xl p-2 hover:-translate-y-1 active:translate-y-0 hover:from-indigo-600 hover:to-purple-700">
+            <svg class='h-5 w-5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffff">
+                <path
+                    d="M5.82843 6.99955L8.36396 9.53509L6.94975 10.9493L2 5.99955L6.94975 1.0498L8.36396 2.46402L5.82843 4.99955H13C17.4183 4.99955 21 8.58127 21 12.9996C21 17.4178 17.4183 20.9996 13 20.9996H4V18.9996H13C16.3137 18.9996 19 16.3133 19 12.9996C19 9.68584 16.3137 6.99955 13 6.99955H5.82843Z">
+                </path>
+            </svg>
+        </button>
+    </div>
+
+
+    <!-- user_form -->
+    <div class="CreateID min-h-screen  items-center justify-center p-4 hidden">
+        <div id="CreateAccount" class="flex flex-col items-center w-full max-w-4xl">
+            <h1 class="text-3xl font-bold text-purple-600 text-center mb-8">Please give your Identification below</h1>
+
+            <div
+                class="mainFrom w-[80vw] h-[70vh] max-w-3xl bg-white rounded-3xl p-8 shadow-2xl flex flex-col gap-5 overflow-y-auto">
+
+                <div class="flex flex-col gap-2">
+                    <label for="NameOfUser" class="font-semibold text-gray-700 text-sm">Name <span
+                            class="text-red-500">**</span></label>
+                    <input id="NameOfUser" type="text" placeholder="Enter your name"
+                        class="px-4 py-3 border-2 border-gray-300 rounded-lg text-base outline-none transition-all duration-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="ProflilePic" class="font-semibold text-gray-700 text-sm">Profile Picture <span
+                            class="text-red-500">**</span></label>
+                    <input id="ProflilePic" type="file" accept="image/*"
+                        class="px-3 py-2.5 border-2 border-gray-300 rounded-lg text-base outline-none cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-blue-50 file:text-blue-600 file:cursor-pointer hover:file:bg-blue-100">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="Bio" class="font-semibold text-gray-700 text-sm">Bio <span
+                            class="text-red-500">**</span></label>
+                    <textarea name="bio" id="Bio" placeholder="Tell us about yourself..."
+                        class="px-4 py-3 border-2 border-gray-300 rounded-lg text-base outline-none transition-all duration-300 resize-y min-h-[100px] focus:border-blue-500 focus:ring-2 focus:ring-blue-200"></textarea>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="age" class="font-semibold text-gray-700 text-sm">Age <span class="text-red-500">** age
+                            muse be 18-60</span></label>
+                    <input id="age" type="number" placeholder="Enter your age"
+                        class="px-4 py-3 border-2 border-gray-300 rounded-lg text-base outline-none transition-all duration-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="Location" class="font-semibold text-gray-700 text-sm">Current Location <span
+                            class="text-red-500">**</span> <span class="text-gray-500 text-xs font-normal">(e.g., Delhi,
+                            India)</span></label>
+                    <input id="Location" type="text" placeholder="Enter your location"
+                        class="px-4 py-3 border-2 border-gray-300 rounded-lg text-base outline-none transition-all duration-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="gender" class="font-semibold text-gray-700 text-sm">Gender <span
+                            class="text-red-500">**</span></label>
+                    <select aria-placeholder="select-gender" id="gender"
+                        class="px-4 py-3 border-2 border-gray-300 rounded-lg text-base outline-none transition-all duration-300 cursor-pointer focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                        <option value="select-gender">Select-gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button id="generateButton"
+                class="generateId mt-8 px-12 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white border-none rounded-full text-lg font-semibold cursor-pointer transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 hover:from-indigo-600 hover:to-purple-700">
+                Generate ID
+            </button>
+
+            <button title="Back"
+                class="Home2 p-4 cursor-pointer mt-2 bg-green-400 rounded-xl p-2 hover:-translate-y-1 active:translate-y-0 hover:from-indigo-600 hover:to-purple-700">
+                <svg class='h-5 w-5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffff">
+                    <path
+                        d="M5.82843 6.99955L8.36396 9.53509L6.94975 10.9493L2 5.99955L6.94975 1.0498L8.36396 2.46402L5.82843 4.99955H13C17.4183 4.99955 21 8.58127 21 12.9996C21 17.4178 17.4183 20.9996 13 20.9996H4V18.9996H13C16.3137 18.9996 19 16.3133 19 12.9996C19 9.68584 16.3137 6.99955 13 6.99955H5.82843Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="OwnProfile"
+        class="hidden fixed top-0 left-0 h-[100vh] w-[100vw] z-50 justify-center items-center  bg-gray-600 ">
+        <div id="selfCard" class=" bg-contain bg-center bg-no-repeat  overflow-hidden rounded-3xl h-[80vh] w-[50vw]  detailedContainer">
+            <div class="nav flex justify-around items-center h-[20%] w-[100%] text-white">
+                <div>Name</div>
+                <div>Massage</div>
+                <div>Edit Profile</div>
+                <div>Delete Profile</div>
+            </div>
+
+            <div class="detailsOfUser mt-30 flex flex-col gap-[20px]">
+                <div class="Name-age flex  justify-start items-start text-white">
+                    <h1 class="Name text-3xl ">Name</h1>
+                    <h1 class="age text-3xl text-gray-500 ">25</h1>
+                </div>
+                <div class="Location flex  justify-start items-start">
+                    <span>
+                        <svg class='h-[50px] w-[50px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="text-6xl text-lg">west Bengal, India</span>
+                </div>
+                <div class="bio flex  justify-start items-start">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officiis vitae illum possimus,
+                        libero autem explicabo quo quia ut corrupti? Facere odio repudiandae tempora veniam molestiae
+                        dolorem pariatur vel qui?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="sallu.js"></script>
+
+</body>
+
+</html>
