@@ -1,0 +1,1 @@
+This is web tinder effect for all the user , I have just started it to building , but I share my Idea in this link check it out nwo    link:-https://github.com/SAHENSA2003/Tinder-web-effect-for-all-user-/settings/pages
